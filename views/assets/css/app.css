@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blackColor:#000;
+    --whiteColor:#fff;
+    --whiteLight:#fcfcfc;
+    --green1:#23cc71;
+    --green2:#badc58;  
+    --redLight:#f8aeae;
+    --redDark:#622d2d; 
+}
+
+body {
+    background:var(--whiteLight);
+}
+
+.nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background: var(--whiteColor);
+    box-shadow: 0 16px 32px 0 rgba(221, 230, 237, .4);
+    padding: 0 100px;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav ul li {
+    display: inline-block;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    display: block;
+    color: var(--blackColor);
+    padding: 0 15px;
+}
+
+.left-nav {
+    width: 50%;
+}
+
+.right-nav {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+} 
+
+.form-row {
+    display: flex;
+    height: calc(100vh - 70px);
+}
+
+.left-side {
+    width: 60%;
+    background: url("../img/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+.right-side {
+    width: 40%;
+}
+
+.form-container {
+    display: flex;
+    height: calc(100vh - 70px);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form {
+    width: 70%;
+    background: var(--whiteColor);
+    border-radius: 3px;
+    box-shadow: 0 16px 32px 0 rgba(221, 230, 237, .4);
+    padding: 25px;
+}
+
+.errors {
+    width: 70%;
+    padding: 14px 18px;
+    margin-bottom: 6px;
+    background: var(--redLight);
+    color:var(--redDark);
+    border-left: 4px solid var(--redDark);
+}
+
+.error {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+
+label {
+    display: block;
+    color: silver;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.group {
+    margin: 7px 0;
+}
+
+.control {
+    width: 100%;
+    padding: 13px 11px;
+    border : none;
+    outline: none;
+    background: var(--whiteLight);
+    border-left: 4px solid var(--green1);
+    margin-bottom: 7px;
+}
+
+.btn {
+    border: none;
+    outline: none;  
+    cursor: pointer;  
+}
+
+.btn-sweet {
+    padding: 15px 7px;
+    width: 100%;
+    background: linear-gradient(to right, var(--green1), var(--green2));
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.group h3 {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
